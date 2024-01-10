@@ -1,0 +1,35 @@
+/* Add your custom styles for the dashboard page */
+
+body {
+  background-color: #f8f9fa; /* Bootstrap background color */
+}
+
+h1 {
+  color: #007bff; /* Bootstrap primary color */
+  text-align: center;
+}
+
+.container {
+  margin-top: 50px;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #dee2e6; /* Bootstrap secondary border color */
+  border-radius: 10px;
+  background-color: #ffffff; /* White background */
+}
+
+table {
+  margin-top: 20px;
+}
+

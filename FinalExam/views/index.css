@@ -1,0 +1,24 @@
+/* Add your custom styles for the index page */
+
+body {
+    background-color: #f8f9fa; /* Bootstrap background color */
+}
+
+.container {
+    margin-top: 50px;
+    text-align: center;
+}
+
+h1 {
+    color: #007bff; /* Bootstrap primary color */
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #dee2e6; /* Bootstrap secondary border color */
+    border-radius: 10px;
+    background-color: #ffffff; /* White background */
+}
+

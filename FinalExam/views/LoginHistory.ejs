@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Signup</title>
+    <link href="/css/LoginHistory.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <h1>Login History</h1>
+    <!--create me a table to insert in the database using node js-->
+      <table border="1">
+          <thead>
+          <tr> 
+              <th>username</th>
+              <th>LoginDate</th>
+              <th>Action</th>
+          </tr>
+          </thead>
+          <tbody>
+          <% log.forEach(function(log){ %>
+              <tr>
+                  <td><%= log.LoginDate %></td>
+              <td><%= log.username %></td>
+              </tr>
+          <% }); %>
+          </tbody>
+      </table>
+      <script>
+        //make api to logout
+$('.logout').click(function(e){
+   e.preventDefault(); 
+   $.ajax({
+     type: 'POST',
+     url: '/api/logout',
+     success: function(response,status){
+       window.location.href = '/';
+     },
+     error: function(error){
+       console.error('logout error', error);
+     }
+   });
+});
+      </script>
+</body>
+</html>
